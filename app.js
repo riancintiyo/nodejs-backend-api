@@ -31,9 +31,9 @@ const server = http.createServer((req, res) => {
         });
         req.on("end", () => {
             // Replace + with space only for spaces, then decode
-            console.log("Raw body:", body);
+            console.log("Raw body data:", body);
             const decodedBody = body.replace(/\+/g, " ");
-            console.log("Decoded body:", decodedBody);
+            console.log("Decoded body data:", decodedBody);
             const params = new URLSearchParams(decodedBody);
             console.log("Received message:", params);
             let message = params.get("message") || "";
