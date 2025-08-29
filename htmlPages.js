@@ -48,6 +48,15 @@ function renderFormPage() {
         <br><br>
         <button type="submit">Submit</button>
       </form>
+
+      <h2>Create txt file</h2>
+      <form method="POST" action="/message">
+        <label for="message">Enter your message:</label>
+        <br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+      </form>
     </body>
     </html>
   `;
